@@ -2,7 +2,7 @@ class MoviesController < ApplicationController
 end
 
 def index
-  movies = Movie.all.order(:id)
+  movies = Movie.all
   render json: movies
 end
 
